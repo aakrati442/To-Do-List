@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #db50cd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #cb8bd1;
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.center-container{
+  height: 600px;
+  width: 550px;
+}
+.app-heading{
+  padding: 8px;
+  color: white;  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.input-box-todo{
+  margin-left: 10px;
+  width: 70%;
+  height: 40px;
+  border-radius: 14px;
+  border:1px solid rgb(186, 50, 186);
+  padding-left: 10px;  
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+.add-btn{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:none;
+  background-color:#c15196;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 10px;  
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+  transition: 0.3s;
+}
+.add-btn:active{
+  box-shadow: none;
+}
+.list-container{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.list-item{
+  list-style-type: none;
+  background-color: white;
+  border:2px solid #c15196 ;
+  color:rgb(12, 10, 10);
+  padding:3px;
+  padding-left: 5px;
+  border-radius: 5px; 
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  font-size: large;
+}
+.icons{
+  position: absolute;
+  right: 10px;
+}
+.icons i{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;   
+}
+.icons i:hover{
+  transform: scale(1.2);  
+}
+.icon-delete:hover{
+  color: red;
+}
